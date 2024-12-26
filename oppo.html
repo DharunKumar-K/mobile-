@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPPO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white; 
+      color: black; /
+    }
+
+    header {
+      background-color: #f4f4f4; 
+      color: black; 
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .mobile-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .mobile-card {
+      border: 1px solid #ddd;
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .mobile-card img {
+      width: 100%;
+      max-width: 150px; 
+      height: 150px; 
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-card button {
+      background-color: #007BFF; 
+      color: white; 
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .mobile-card button:hover {
+      background-color: #0056b3;}
+
+    footer {
+      background-color: #f4f4f4; 
+      color: black; 
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #ddd; 
+    }
+    .buy-now-button 
+{ background-color: #28a745; 
+color: white; 
+border: none; 
+padding: 10px 20px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 10px 2px; 
+cursor: pointer; 
+border-radius: 5px; 
+transition: background-color 0.3s ease;
+ }
+ .buy-now-button:hover 
+{
+ background-color: #218838;
+ }
+  </style>
+</head>
+<body> <header>
+  <h1>Mobile Store</h1>
+  <nav>
+    <ul>
+      <a href="1.html">Brands</a>
+    <a href="i3.html">home</a>
+    <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+</header>
+
+ 
+  <section id="oppo" class="mobile-section">
+    <h2>oppo Mobiles</h2>
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="10.jpg" alt="Oppo Reno10">
+        <h3> Oppo reno10</h3>
+        <p>&#8377;<strike>30999.00</strike>  28499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="x6.jpg" alt=" Find X6">
+        <h3> Find X6</h3>
+        <p>&#8377;<strike>20999.00</strike>  21499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+      </div>
+    </div>
+    <section id="oppo" class="mobile-section">
+      
+      <div class="mobile-list">
+        <div class="mobile-card">
+          <img src="reno10pro.jpg" alt="Oppo reno10pro">
+          <h3> Oppo reno10pro</h3>
+          <p>&#8377;<strike>37999.00</strike>  36499.00</p>
+          <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+          <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        </div>
+        <div class="mobile-card">
+          <img src="a17.jpg" alt="oppo a17">
+          <h3> Oppo a17</h3>
+          <p>&#8377;<strike>18999.00</strike>  16499.00</p>
+          <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+          <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        </div>
+      </div>
+      <section id="oppo" class="mobile-section">
+        <div class="mobile-list">
+          <div class="mobile-card">
+            <img src="a74.jpg" alt="Oppo a77">
+            <h3> oppo a77</h3>
+            <p>&#8377;<strike>15999.00</strike>  13499.00</p>
+            <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+            <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+          </div>
+          <div class="mobile-card">
+            <img src="a57.jpg" alt=" oppo a57">
+            <h3> oppo a57</h3>
+            <p>&#8377;<strike>10999.00</strike>  8499.00</p>
+            <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+            <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+          </div>
+        </div>
+        <section id="oppo" class="mobile-section">
+      
+          <div class="mobile-list">
+            <div class="mobile-card">
+              <img src="a77.jpg" alt="Oppo Renoa77">
+              <h3> oppo a77</h3>
+              <p>&#8377;<strike>21999.00</strike>  20499.00</p>
+              <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+              <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+            </div>
+            <div class="mobile-card">
+              <img src="a18.jpg" alt=" oppo a18">
+              <h3> oppo a18</h3>
+              <p>&#8377;<strike>9999.00</strike>  9499.00</p>
+              <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+              <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+            </div>
+          </div>
+          <section id="oppo" class="mobile-section">
+     
+            <div class="mobile-list">
+              <div class="mobile-card">
+                <img src="f21pro.jpg" alt="Oppo f21pro">
+                <h3> oppo f21pro</h3>
+                <p>&#8377;<strike>17999.00</strike>  15499.00</p>
+                <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+                <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+              </div>
+              <div class="mobile-card">
+                <img src="a94.jpg" alt=" oppo a94">
+                <h3> oppo a94</h3>
+                <p>&#8377;<strike>12999.00</strike>  10499.00</p>
+                <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+                <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+              </div>
+            </div>
+                    
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+
+  <script> 
+   function buyNow() 
+    {
+     window.location.href = "payment.html"; } 
+     function addtocart()
+    { alert("Iteam is added to cart");}
+    
+    
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIXEL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white; 
+      color: black; /
+    }
+
+    header {
+      background-color: #f4f4f4; 
+      color: black; 
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .mobile-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .mobile-card {
+      border: 1px solid #ddd;
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .mobile-card img {
+      width: 100%;
+      max-width: 150px; 
+      height: 150px; 
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-card button {
+      background-color: #007BFF; 
+      color: white; 
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .mobile-card button:hover {
+      background-color: #0056b3;}
+
+    footer {
+      background-color: #f4f4f4; 
+      color: black; 
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #ddd; 
+    }
+    .buy-now-button 
+{ background-color: #28a745; 
+color: white; 
+border: none; 
+padding: 10px 20px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 10px 2px; 
+cursor: pointer; 
+border-radius: 5px; 
+transition: background-color 0.3s ease;
+ }
+ .buy-now-button:hover 
+{
+ background-color: #218838;
+ }
+  </style>
+</head>
+<body> <header>
+  <h1>Mobile Store</h1>
+  <nav>
+    <ul>
+      <a href="1.html">Brands</a>
+    <a href="i3.html">home</a>
+    <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+</header>
+
+
+
+ 
+     
+
+<section id="Pixel " class="mobile-section">
+  <h2>Pixel Mobiles</h2>
+  <div class="mobile-list">
+    <div class="mobile-card">
+      <img src="8.jpg" alt="Pixel 8">
+      <h3>Pixel 8</h3>
+      <p>&#8377;<strike>49999.00</strike>  47499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+    <div class="mobile-card">
+      <img src= "7a.jpg" alt="  Pixel 7a">
+      <h3>  Pixel 7a</h3>
+      <p>&#8377;<strike>28999.00</strike>  27499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+  </div>
+
+
+  <div class="mobile-list">
+    <div class="mobile-card">
+      <img src="pixel xl.jpg" alt="Pixel xl">
+      <h3>Pixel 9PROxl</h3>
+      <p>&#8377;<strike>120999.00</strike>  118499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+    <div class="mobile-card">
+      <img src= "pixel3a.jpg" alt="  Pixel 3a">
+      <h3>  Pixel 3a</h3>
+      <p>&#8377;<strike>20999.00</strike>  19499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class="mobile-list">
+    <div class="mobile-card">
+      <img src="pixel4.jpg" alt="Pixel 4">
+      <h3>Pixel 4</h3>
+      <p>&#8377;<strike>21999.00</strike>  20499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+    <div class="mobile-card">
+      <img src= "pixel5.jpg" alt="  Pixel 5">
+      <h3>  Pixel 5</h3>
+      <p>&#8377;<strike>21999.00</strike>  21499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class="mobile-list">
+    <div class="mobile-card">
+      <img src="pixel6.jpg" alt="Pixel 6">
+      <h3>Pixel 6</h3>
+      <p>&#8377;<strike>25999.00</strike>  24499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+    <div class="mobile-card">
+      <img src= "pixel7pro.jpg" alt="  Pixel 7pro">
+      <h3>  Pixel 7pro</h3>
+      <p>&#8377;<strike>45999.00</strike>  44499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class="mobile-list">
+    <div class="mobile-card">
+      <img src="pixel9pro.jpg" alt="Pixel 9pro">
+      <h3>Pixel 9pro</h3>
+      <p>&#8377;<strike>69999.00</strike>  68499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+    <div class="mobile-card">
+      <img src= "9PRO.webp" alt="  Pixel 9pro">
+      <h3>  Pixel 9</h3>
+      <p>&#8377;<strike>50999.00</strike>  49499.00</p>
+      <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+    </div>
+  </div>
+</section>
+</section>
+      
+      
+    </div>
+  </div>
+</section>
+</section>
+
+
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+
+  <script> 
+   function buyNow() 
+    {
+     window.location.href = "payment.html"; } 
+     function addtocart()
+    { alert("Iteam is added to cart");}
+    
+    
+    </script>
+</body>
+</html>
+
+
+ 
+ 
