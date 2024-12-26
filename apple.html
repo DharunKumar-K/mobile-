@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APPLE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white; 
+      color: black; /
+    }
+
+    header {
+      background-color: #f4f4f4; 
+      color: black; 
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .mobile-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .mobile-card {
+      border: 1px solid #ddd;
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .mobile-card img {
+      width: 100%;
+      max-width: 150px; 
+      height: 150px; 
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-card button {
+      background-color: #007BFF; 
+      color: white; 
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .mobile-card button:hover {
+      background-color: #0056b3;}
+
+    footer {
+      background-color: #f4f4f4; 
+      color: black; 
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #ddd; 
+    }
+    .buy-now-button 
+{ background-color: #28a745; 
+color: white; 
+border: none; 
+padding: 10px 20px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 10px 2px; 
+cursor: pointer; 
+border-radius: 5px; 
+transition: background-color 0.3s ease;
+ }
+ .buy-now-button:hover 
+{
+ background-color: #218838;
+ }
+  </style>
+</head>
+<body> <header>
+  <h1>Mobile Store</h1>
+  <nav>
+    <ul>
+      <a href="1.html">Brands</a>
+    <a href="i3.html">home</a>
+    <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+</header>
+ 
+  <section id="apple" class="mobile-section">
+    <h2>Apple Mobiles</h2>
+
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="15.jpg" alt="Apple iPhone 15">
+        <h3>iPhone 15</h3>
+        <p>&#8377;<strike>60999.00</strike>  58499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="16.jpg" alt="Apple iPhone 16">
+        <h3>iPhone 16</h3>
+        <p>&#8377;<strike>80999.00</strike>  79499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="apple" class="mobile-section">
+    
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="apple13.jpg" alt="Apple iPhone 13">
+        <h3>iPhone 13</h3>
+        <p>&#8377;<strike>49999.00</strike>  48499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="apple14.jpg" alt="Apple iPhone 14">
+        <h3>iPhone 14</h3>
+        <p>&#8377;<strike>59999.00</strike>  58499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="apple" class="mobile-section">
+    
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="15PLUS.webp" alt="Apple iPhone 15 plus">
+        <h3>iPhone 15 plus</h3>
+        <p>&#8377;<strike>64999.00</strike>  63499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="14PROMAX.webp" alt="Apple iPhone 14 pro max">
+        <h3>iPhone 14 pro max</h3>
+        <p>&#8377;<strike>100999.00</strike>  99499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="apple" class="mobile-section">
+    
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="15pro.jpg" alt="Apple iPhone 15 pro">
+        <h3>iPhone 15 pro</h3>
+        <p>&#8377;<strike>111999.00</strike>  110499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="16pro.jpg" alt="Apple iPhone 16 pro">
+        <h3>iPhone 16 pro</h3>
+        <p>&#8377;<strike>130999.00</strike>  129499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="apple" class="mobile-section">
+    
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="14plus.jpg" alt="Apple iPhone 14 plus">
+        <h3>iPhone 14 plus</h3>
+        <p>&#8377;<strike>57999.00</strike>  56499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>
+        
+      </div>
+      <div class="mobile-card">
+        <img src="14PRO.webp" alt="Apple iPhone 14 pro">
+        <h3>iPhone 14 pro</h3>
+        <p>&#8377;<strike>80999.00</strike>  78499.00</p>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart('Mobile Name')">Add to Cart</button>>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+
+  <script> 
+  
+    function buyNow() 
+    {
+     window.location.href = "payment.html"; } 
+     function addtocart()
+    { alert("Iteam is added to cart");}
+    
+    
+    </script>
+</body>
+</html>

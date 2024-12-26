@@ -1,0 +1,105 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+   
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+      gap: 20px; /* Spacing between items */
+      padding: 20px;
+      justify-items: center; /* Center items horizontally */
+      align-items: center; /* Align items vertically */
+    }
+
+    .brand-card {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .brand-card img {
+      width: 100px; /* Adjust image size */
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .brand-card:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body> <header>
+  <h1>Mobile Store</h1>
+  <nav>
+    <ul>
+      <a href="1.html">Brands</a>
+    <a href="i3.html">home</a>
+    <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+</header>
+<body>
+  
+    <section id="brands">
+    <h2>Our Mobile Brands</h2>
+    <div class="brand-grid">
+      <a href="apple.html"><div class="brand-card"><img src="OIP.jpg" alt="Apple"><h3>Apple</h3></div></a>
+      <a href="samsung.html"><div class="brand-card"><img src= "sam.jpg"alt="Samsung"><h3>Samsung</h3></div></a>
+      <a href="oppo.html"><div class="brand-card"><img src= "download.jpg" alt="Oppo"><h3>Oppo</h3></div></a>
+      <a href="vivo.html"><div class="brand-card"><img src="vivo.jpg" alt="Vivo"><h3>Vivo</h3></div></a>
+      <a href="iqoo.html"><div class="brand-card"><img src="iqoo.jpg" alt="iQOO"><h3>iQOO</h3></div></a>
+      <a href="infinix.html"><div class="brand-card"><img src= "infinix.jpg"" alt="Infinix"><h3>Infinix</h3></div></a>
+      <a href="poco.html"><div class="brand-card"><img src=  "poco.jpg"alt="Poco"><h3>Poco</h3></div></a>
+      <a href="mi.html"><div class="brand-card"><img src= "mi.jpg" alt="Mi"><h3>Mi</h3></div></a>
+      <a href="tecno.html"><div class="brand-card"><img src="tecno.jpg" alt="Tecno"><h3>Tecno</h3></div></a>
+      <a href="motorola.html"><div class="brand-card"><img src="moto.jpg" alt="Motorola"><h3>Motorola</h3></div></a>
+      <a href="pixel.html"><div class="brand-card"><img src="pixel.jpg" alt="Pixel"><h3>Google Pixel</h3></div></a>
+      <a href="oneplus.html"><div class="brand-card"><img src="one plus.jpg"alt="OnePlus"><h3>OnePlus</h3></div></a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function buyNow(productName) {
+      alert(You selected to buy: ${productName});
+    }
+
+    document.getElementById("exploreButton").addEventListener("click", () => {
+      window.location.href = "#brands";
+    });
+  </script>
+</body>
+</html>
