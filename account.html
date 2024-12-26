@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile and Accessories</title>
+    <link rel="stylesheet" href="MOA.css">
+<style>
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: span 2;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.sign-out {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-out:hover {
+    background-color: #e64a19;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #ff5722;
+}
+
+main {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    margin: 0 0 15px;
+}
+
+.info-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h3 {
+    margin: 0;
+    color: #ff5722;
+    font-size: 14px;
+}
+
+.info-item p {
+    margin: 5px 0 0;
+    color: #333;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mobile and Accessories</h1>
+            <button class="sign-out">Sign Out</button>
+        </header>
+        <aside>
+            <ul class="menu">
+                <li>Categories</li>
+                <li>Brands</li>
+                <li>Order History</li>
+                <li>Support</li>
+            </ul>
+        </aside>
+        <main>
+            <section class="info">
+                <h2>Product Details</h2>
+                <div class="info-card">
+                    <div class="info-item">
+                        <h3>Product Name</h3>
+                        <p>Mobile/accesories Name</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Brand</h3>
+                        <p>Brand Name</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Price</h3>
+                        <p>Price of the product</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Availability</h3>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

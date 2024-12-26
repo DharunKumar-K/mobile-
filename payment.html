@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: gray;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.payment-form {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+}
+.payment-form h2 {
+margin-bottom: 20px;
+}
+.payment-form input[type="text"], .payment-form input[type="tel"], .payment-form select {
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.payment-form button {
+background-color: blue;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+margin: 10px 0;
+cursor: pointer;
+border-radius: 4px;
+width: 100%;
+}
+.payment-form button:hover {
+background-color:gray;
+}
+</style>
+<title>Payment Form</title>
+</head>
+<body>
+<div class="payment-form">
+<h2>Payment Information</h2>
+<form action="submit_payment.php" method="POST">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" required>
+
+<label for="mobile">Mobile Number:</label>
+<input type="text" id="mobile" name="mobile">
+
+<label for="payment-method">Payment Method:</label>
+<select id="payment-method" name="payment-method" required>
+<option value="credit-card">Credit Card</option>
+<option value="debit-card">Debit Card</option>
+<option value="cash on delivery">cash on delivery</option>
+<option value="paypal">PayPal</option>
+</select>
+<button class="buy-now-button" onclick="buyNow()">Buy Now</button> 
+<script> 
+function buyNow() 
+{
+ window.location.href = "l.html"; } 
+</script>
+</form>
+</div>
+</body>
+</html>
