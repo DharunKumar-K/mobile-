@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .brand-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .brand-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .brand-card:hover {
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+.home-link {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds space inside the box */
+    background-color: grey; /* Sets the background color */
+    color: white; /* Sets the text color */
+    text-align: center; /* Centers the text inside the box */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Rounds the corners of the box */
+    font-size: 16px; /* Adjusts the font size */
+    transition: background-color 0.3s; /* Adds a smooth transition effect */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mobile Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Select a Accessory</h2>
+    <div class="brand-grid">
+      <a href="charger.html" class="brand-card">
+        <img src="charger icon.jpeg" alt="Charger">
+        <h3>Charger</h3>
+      </a>
+      <a href="headphone.html" class="brand-card">
+        <img src="head logo.avif" alt="headphone">
+        <h3>Headphones</h3>
+      </a>
+      <a href="power bank.html" class="brand-card">
+        <img src="pb logo.png"alt="power bank">
+        <h3>Power Banks</h3>
+      </a>
+      <a href="pendrive.html" class="brand-card">
+        <img src="pen logo.jpg""alt="pendrive">
+        <h3>Pendrives</h3>
+      </a>
+<a href="bluetooth speaker.html" class="brand-card">
+        <img src="bs logo.jpg"alt="bluetooth speaker">
+        <h3>Bluetooth Speakers</h3>
+      </a>
+
+      <!-- Add more brands here -->
+    </div>
+  </section>
+<br><br><center><a href="i3.html" class="home-link" >Go Back to Home Page </a></center></br></br>
+
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<body style="text-align: center;">
+      <h1 style="text-align: center;">ELECTRICITY BILL CALCULATOR</h1>
+      <label>ENTER OMR READING:</label>
+      <input type="text" id="omr"><br>
+      <label>ENTER CMR READING:</label>
+      <input type="text" id="cmr"><br>
+      <input style="background-color:blue" type="button" value="SUBMIT" onclick=elecbill()><br>
+      <label>UNIT CONSUMED:</label>
+      <input type="text" id="uni"><br> 
+      <label>CHARGE:</label>
+      <input type="text" id="chr"><br>
+      <label>TAX:</label>
+      <input type="text" id="tax"> <br>
+      <label>BILL AMOUNT:</label>
+      <input type="text" id="bill">  
+<script>
+      function elecbill()
+        {let unit;
+	let charge;
+	let bill;
+	let tax;
+        let  omr=parseInt(document.getElementById("omr").value);
+	let  cmr=parseInt(document.getElementById("cmr").value);
+        if(cmr>omr)
+	{
+	unit=cmr-omr;
+	document.getElementById("uni").value=unit;
+        if(unit>0 && unit<100)
+	{
+	charge=(unit)*0;
+        document.getElementById("chr").value=charge;
+	}
+	else if(unit>101 && unit<500)
+	{
+	charge=(100*0)+(unit-100)*1.25;
+        document.getElementById("chr").value=charge;
+	}
+	else if(unit>501 && unit<1000)
+	{
+	charge=(100*0)+(400*1.25)+(unit-500)*2;
+
+        document.getElementById("chr").value=charge;
+	}
+	else
+	{charge=(100*0)+(400*1.25)+(500*2)+(unit-1000)*2.75;
+	document.getElementById("chr").value=charge;}}
+        tax=0.12*charge;
+	document.getElementById("tax").value=tax;
+	bill=tax+charge;
+	document.getElementById("bill").value=bill;
+	
+}
+</script> 
+</body>
+</html>

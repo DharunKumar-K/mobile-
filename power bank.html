@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluetooth Speakers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white; /* White background */
+      color: black; /* Black text */
+    }
+
+    header {
+      background-color: #f4f4f4; /* Light gray header */
+      color: black; /* Black text for header */
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 2px solid #ddd; /* Subtle border */
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .mobile-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .mobile-card {
+      border: 1px solid #ddd;
+      background-color: white; /* White background for cards */
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .mobile-card img {
+      width: 100%;
+      max-width: 150px; /* Set a maximum width */
+      height: 150px; /* Set a fixed height */
+      object-fit: contain; /* Ensure the image scales proportionally */
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-card button {
+      background-color: #007BFF; /* Blue button */
+      color: white; /* White text */
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .mobile-card button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    footer {
+      background-color: #f4f4f4; /* Light gray footer */
+      color: black; /* Black text for footer */
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #ddd; /* Subtle border */
+    }
+.home-link {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds space inside the box */
+    background-color: #007BFF; /* Sets the background color */
+    color: white; /* Sets the text color */
+    text-align: center; /* Centers the text inside the box */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Rounds the corners of the box */
+    font-size: 16px; /* Adjusts the font size */
+    transition: background-color 0.3s; /* Adds a smooth transition effect */
+}
+
+  </style>
+</head>
+<body>
+<body>
+  <header>
+    <h1>Power Banks</h1>
+  </header>
+
+  <section>
+    <div class="mobile-list">
+      <div class="mobile-card">
+        <img src="pb1.jpg" alt="charger">
+        <h3>Berry Ultra Power Bank</h3><b>₹550 <strike>₹850</strike></b><h5>One year warranty</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button>
+
+      </div>
+      <div class="mobile-card">
+        <img src="pb2.jpg" alt="iPhone 14">
+        <h3>Apple Carriable Power Bank</h3><b>₹3999 <strike>₹6999</strike></b><h5>Two years warranty</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+       <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+
+      </div>
+<div class="mobile-card">
+        <img src="pb3.jpeg" alt="iPhone 14">
+        <h3>Redmi Ultra Power Bank</h3><b>₹1200 <strike>₹2999</strike></b><h5>One year warranty with cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+
+      </div>
+<div class="mobile-card">
+        <img src="pb4.jpg" alt="iPhone 14">
+        <h3>Gaint Pro Power Bank</h3><b>₹1500 <strike>₹2999</strike></b><h5>One year warranty with 50% cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+        <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+
+      </div>
+<div class="mobile-card">
+        <img src="pb5.jpeg" alt="iPhone 14">
+        <h3> E-Power Bank for Iphone </h3><b>₹4499 <strike>₹6999</strike></b><h5>One year warranty with cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+      <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+
+      </div>
+<div class="mobile-card">
+        <img src="pb6.jpg" alt="iPhone 14">
+        <h3>Soulmate Stylish Power Bank</h3><b>₹2500 <strike>₹3999</strike></b><h5>One year warranty with  cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+ <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+      </div>
+<div class="mobile-card">
+        <img src="pb7.jpg" alt="iPhone 14">
+        <h3>Laptop Power Bank</h3><b>₹1999 <strike>₹3000</strike></b><h5>Two year warranty with  cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+ <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+      </div>
+<div class="mobile-card">
+        <img src="pb8.jpeg" alt="iPhone 14">
+        <h3>Bell's Pro Power Bank</h3><b>₹1500 <strike>₹2999</strike></b><h5>Two year warranty </h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+ <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+      </div>
+<div class="mobile-card">
+        <img src="pb9.avif" alt="iPhone 14">
+        <h3>Multi-Coloured Power Banks</h3><b>₹4999 <strike>₹8999</strike></b><h5>one year warranty with  cashback</h5>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+ <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+      </div>
+<div class="mobile-card">
+        <img src="pb10.webp" alt="iPhone 14">
+        <h3>Urbn Ultra Power Bank</h3><b>₹1500 <strike>₹3500</strike></b><h5>Two year warranty with 90% cashback</h5>
+       <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+ <button class="add -to-cart-button" onclick="addtocart()">Buy Now</button
+      </div>
+
+    </div>
+  </section>
+<br><br><center><a href="mobil shop.html" class="home-link" > Go Back </a></center></br></br>
+  <footer>
+    <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+  </footer>
+
+  <script> 
+function buyNow() 
+{ alert("Redirecting to payment page...");
+ window.location.href = "payment.html"; } 
+function addtocart() 
+{ alert("added to cart");
+ 
+</script>
+
+</body>
+</html>
